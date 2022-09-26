@@ -1,7 +1,34 @@
 :root {
-
+  --background: #303030;
+  --text: white;
 }
 
-header {
-  background-color: #303030;
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+:is(
+  nav,
+  footer,
+
+) * li {
+  display: inline;
+}
+
+nav ul li {
+  margin: 0 5px 0 5px;
+}
+
+.sponsors ul li {
+  margin: 0 1.25vw 0 1.25vw;
 }

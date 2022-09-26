@@ -7,13 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/not.bootstrap.css">
+
+  <script type="text/javascript" src="/assets/js/live.js"></script>
 
   <title>Practica 1 - Adrian Sebastian Stan</title>
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="flex justify-content-between">
       <ul>
         <li><img src="#" alt="Logo"></li>
 
@@ -370,7 +373,7 @@
       </div>
     </div>
 
-    <div class="sponsors">
+    <div class="sponsors text-center">
       <h1>Sponsors</h1>
 
       <ul>
@@ -388,41 +391,39 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="left-side">
-        <img src="#" alt="Logo" srcset="#">
+  <footer class="flex justify-content-between text-center">
+    <div class="left-side">
+      <img src="#" alt="Logo" srcset="#">
+    </div>
+
+    <div class="center">
+      <div>
+        <ul>
+          <li><a href="#">Legal & Compliance</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Carrers</a></li>
+        </ul>
+
+        <p>Company &copy; 2022-2023</p>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
       </div>
 
-      <div class="center">
-        <div>
-          <ul>
-            <li><a href="#">Legal & Compliance</a></li>
-            <li><a href="#">Cookie Settings</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Carrers</a></li>
-          </ul>
-
-          <p>Company &copy; 2022-2023</p>
-        </div>
-      </div>
-
-      <div class="right-side">
-        <div>
-          <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
+      <div>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
     </div>
   </footer>

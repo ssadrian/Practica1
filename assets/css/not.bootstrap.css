@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.test-border * {
+  border: solid 1px black;
+}
+
+.d-inline * {
+  display: inline;
+}
