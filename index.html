@@ -16,9 +16,11 @@
 
 <body>
   <header>
-    <nav class="flex justify-content-between">
-      <ul>
-        <li><img src="#" alt="Logo"></li>
+    <nav class="d-flex justify-content-between align-items-center">
+      <ul class="d-grid grid-column align-items-center gap-3">
+        <li>
+          <img src="https://picsum.photos/70/64" alt="Logo">
+        </li>
 
         <li>
           <a href="#">
@@ -92,7 +94,8 @@
                 </g>
               </svg>
             </i>
-            Account</a>
+            Account
+          </a>
         </li>
         <li>
           <a href="#">
@@ -113,7 +116,7 @@
         </li>
       </ul>
 
-      <ul>
+      <ul class="d-grid grid-column gap-3">
         <li>
           <a href="#">
             Theme
@@ -164,11 +167,11 @@
     </nav>
   </header>
 
-  <div class="content">
+  <div class="content px-4">
     <div class="featured-classes">
       <h1>Featured Classes</h1>
 
-      <div class="featured-container">
+      <div class="d-flex featured-container">
         <div class="featured-item">
           <div class="featured-header">
             <p>Rust</p>
@@ -246,7 +249,7 @@
 
         <div class="featured-item">
           <div class="featured-header">
-            <p>Http/3</p>
+            <p>GraphQL</p>
           </div>
 
           <div class="featured-content">
@@ -271,7 +274,7 @@
 
         <div class="featured-item">
           <div class="featured-header">
-            <p>GraphQL</p>
+            <p>Piet</p>
           </div>
 
           <div class="featured-content">
@@ -377,49 +380,49 @@
       <h1>Sponsors</h1>
 
       <ul>
-        <li><img src="#" alt="Company1"></li>
-        <li><img src="#" alt="Company2"></li>
-        <li><img src="#" alt="Company3"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company1"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company2"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company3"></li>
       </ul>
 
       <ul>
-        <li><img src="#" alt="Company4"></li>
-        <li><img src="#" alt="Company5"></li>
-        <li><img src="#" alt="Company6"></li>
-        <li><img src="#" alt="Company7"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company4"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company5"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company6"></li>
+        <li><img src="https://picsum.photos/184/184" alt="Company7"></li>
       </ul>
     </div>
   </div>
 
-  <footer class="flex justify-content-between text-center">
-    <div class="left-side">
-      <img src="#" alt="Logo" srcset="#">
+  <footer class="d-flex justify-content-between text-center py-4">
+    <div class="footer-left-side">
+      <img src="https://picsum.photos/256/170" alt="Logo">
     </div>
 
-    <div class="center">
+    <div class="d-flex align-items-end footer-middle-section">
       <div>
-        <ul>
+        <ul class="d-grid grid-column gap-5">
           <li><a href="#">Legal & Compliance</a></li>
           <li><a href="#">Cookie Settings</a></li>
           <li><a href="#">Privacy</a></li>
-          <li><a href="#">Carrers</a></li>
+          <li><a href="#">Carers</a></li>
         </ul>
 
-        <p>Company &copy; 2022-2023</p>
+        <p id="copyright">Company &copy; 2022-2023</p>
       </div>
     </div>
 
-    <div class="right-side">
-      <div>
-        <ul>
+    <div class="d-flex footer-right-section">
+      <div class="d-inline-block">
+        <ul class="d-grid gap-3 text-left">
           <li><a href="#">Blog</a></li>
           <li><a href="#">Forum</a></li>
           <li><a href="#">Community</a></li>
         </ul>
       </div>
 
-      <div>
-        <ul>
+      <div class="d-inline-block">
+        <ul class="d-grid gap-3 text-left">
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">FAQ</a></li>

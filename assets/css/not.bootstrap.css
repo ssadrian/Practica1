@@ -1,5 +1,5 @@
-.flex {
-  display: flex;
+:root {
+  --spacer: 1rem;
 }
 
 .justify-content-between {
@@ -18,10 +18,71 @@
   text-align: center;
 }
 
-.test-border * {
-  border: solid 1px black;
+.text-left {
+  text-align: left;
 }
 
-.d-inline * {
+.d-flex {
+  display: flex;
+}
+
+.d-inline,
+.d-inline-items * {
   display: inline;
+}
+
+.d-block,
+.d-block-items *{
+  display: block;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.py-4 {
+  padding-top: calc(var(--spacer) * 1.5);
+  padding-bottom: calc(var(--spacer) * 1.5);
+}
+
+.px-4 {
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-right: calc(var(--spacer) * 1.5);
+}
+
+.mx-1 {
+  margin-left: calc(var(--spacer) * .25);
+  margin-right: calc(var(--spacer) * .25);
+}
+
+.gap-3 {
+  gap: calc(var(--spacer) * 1);
+}
+
+.gap-5 {
+  gap: calc(var(--spacer) * 2);
+}
+
+.grid-column {
+  grid-auto-flow: column;
 }
