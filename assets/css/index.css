@@ -1,7 +1,7 @@
 :root {
   --background: #303030;
   --text: #fafafa;
-  --featured-item-background: #f0f0f0;
+  --featured-item-background: #a26675;
   --featured-item-border-color: #4b4453;
 }
 
@@ -34,22 +34,32 @@ nav ul li {
 
 .featured-item {
   background-color: var(--featured-item-background);
-  transition: transform 250ms ease-out, border 450ms ease-in;
+}
+
+.featured-header {
+  font-weight: bold;
+}
+
+.featured-header,
+.featured-content {
+  padding: 0 1.1rem 0 1.1rem;
+}
+
+.featured-content {
+  text-justify: auto;
+}
+
+.featured-footer {
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+.featured-rating {
+
 }
 
 .featured-rating * {
   display: inline;
-}
-
-.featured-item:hover {
-  transform: scale(1.15);
-  border-color: var(--featured-item-border-color);
-  border-style: solid;
-  border-width: 0 2vw 0 2vw;
-}
-
-.featured-item:hover body {
-  filter: blur(100px);
 }
 
 .sponsors ul li {

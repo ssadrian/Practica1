@@ -86,3 +86,7 @@
 .grid-column {
   grid-auto-flow: column;
 }
+
+.grid-auto-fill-columns {
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
+}
