@@ -90,3 +90,7 @@
 .grid-auto-fill-columns {
   grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
 }
+
+.btn-success {
+  background-color: var(--success-color);
+}

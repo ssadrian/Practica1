@@ -1,43 +1,5 @@
-:root {
-  --background: #303030;
-  --text: #fafafa;
-  --featured-item-background: #a26675;
-  --featured-item-border-color: #4b4453;
-}
-
-body {
-  margin: 0;
-}
-
-header,
-footer {
-  background-color: var(--background);
-  padding: 0 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text);
-}
-
-:is(
-  nav,
-  footer,
-  .sponsors
-) ul li {
-  display: inline;
-}
-
-nav ul li {
-  margin: 0 5px;
-}
-
 .featured-item {
   background-color: var(--featured-item-background);
-}
-
-.content > * {
-  margin: 5rem 0;
 }
 
 .featured-header {
@@ -81,32 +43,4 @@ nav ul li {
 
 .sponsors ul li {
   margin: 0 1.25vw;
-}
-
-.right-side div ul li {
-  height: 2rem;
-}
-
-.footer-middle-section div {
-  position: relative;
-  bottom: 0;
-}
-
-.short-lorem::before {
-  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis nunc eget lorem dolor.';
-}
-
-.long-lorem::before {
-  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut placerat orci nulla pellentesque dignissim. Felis imperdiet proin fermentum leo vel orci porta non. Facilisis leo vel fringilla est ullamcorper eget. Purus in mollis nunc sed id semper risus.';
-}
-
-.short-lorem,
-.long-lorem {
-  text-align: justify;
-  font-size: 1.25em;
-}
-
-#copyright {
-  color: var(--text);
-  font-size: 1.1rem;
 }
