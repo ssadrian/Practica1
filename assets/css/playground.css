@@ -1,0 +1,26 @@
+.editor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editor {
+  margin-top: 0;
+  width: 45vw;
+  height: 85vh;
+  border-radius: 0 .75rem;
+}
+
+.splitter {
+  position: absolute;
+  height: 90%;
+  width: .25%;
+  left: 49.85%;
+  background-color: var(--background);
+}
+
+.run-btn {
+  align-self: stretch;
+  margin-right: 1rem;
+  width: 100vw;
+}

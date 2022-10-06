@@ -60,6 +60,10 @@
   align-items: end;
 }
 
+.justify-content-stretch {
+  justify-content: stretch;
+}
+
 .py-4 {
   padding-top: calc(var(--spacer) * 1.5);
   padding-bottom: calc(var(--spacer) * 1.5);
@@ -93,4 +97,18 @@
 
 .btn-success {
   background-color: var(--success-color);
+}
+
+.btn-failure {
+  background-color: var(--failure-color);
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  border-color: var(--success-color);
+}
+
+.btn-outline-failure {
+  background-color: transparent;
+  border-color: var(--failure-color);
 }
