@@ -62,6 +62,19 @@ nav ul li {
   font-size: 1.25em;
 }
 
+.editor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editor {
+  margin-top: 0;
+  width: 45vw;
+  height: 85vh;
+  border-radius: 0 .75rem;
+}
+
 #copyright {
   color: var(--text);
   font-size: 1.1rem;

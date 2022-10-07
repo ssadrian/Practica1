@@ -2,6 +2,18 @@
   --spacer: 1rem;
 }
 
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+  font-size: calc(1.325rem + .9vw);
+}
+
+h3 {
+  font-size: calc(1.3rem + .6vw);
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -32,7 +44,7 @@
 }
 
 .d-block,
-.d-block-items *{
+.d-block-items * {
   display: block;
 }
 
@@ -62,6 +74,10 @@
 
 .justify-content-stretch {
   justify-content: stretch;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
 }
 
 .py-4 {
@@ -95,6 +111,37 @@
   grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
 }
 
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: 0;
+}
+
+.btn:focus-within {
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.btn:focus-within,
+.btn-outline-failure,
+.btn-outline-success {
+  border-width: .2rem;
+}
+
 .btn-success {
   background-color: var(--success-color);
 }
@@ -104,11 +151,21 @@
 }
 
 .btn-outline-success {
-  background-color: transparent;
+  color: var(--success-color);
   border-color: var(--success-color);
 }
 
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: var(--success-color);
+}
+
 .btn-outline-failure {
-  background-color: transparent;
+  color: var(--failure-color);
   border-color: var(--failure-color);
+}
+
+.btn-outline-failure:hover {
+  color: #fff;
+  background-color: var(--failure-color);
 }
