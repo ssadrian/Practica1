@@ -2,6 +2,10 @@
   --spacer: 1rem;
 }
 
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
