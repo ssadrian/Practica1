@@ -6,6 +6,11 @@
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+body {
+  margin: 0;
+  background-image: linear-gradient(to right top, #fff5ff, #e5dfe7, #cdcacf, #b6b5b8, #a0a0a0);
+}
+
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }

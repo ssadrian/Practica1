@@ -1,14 +1,10 @@
 :root {
   --background: #303030;
-  --text: #fafafa;
+  --text: #303030;
   --featured-item-background: #a26675;
   --featured-item-border-color: #4b4453;
   --success-color: #207868;
   --failure-color: #de8775;
-}
-
-body {
-  margin: 0;
 }
 
 a {
@@ -21,9 +17,15 @@ button {
   border-style: none;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 2px double var(--text);
+}
+
 header,
 footer {
-  background-color: var(--background);
+  background-color: transparent;
   padding: 0 2rem;
 }
 
