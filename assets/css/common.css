@@ -1,10 +1,64 @@
 :root {
   --background: #303030;
-  --text: #303030;
-  --featured-item-background: #a26675;
+  --text: #ffe6d9;
+  --featured-item-background: #ffe6d9;
   --featured-item-border-color: #4b4453;
-  --success-color: #207868;
-  --failure-color: #de8775;
+  --success-color: rgba(32, 120, 104, 1);
+  --failure-color: rgba(222, 135, 117, 1);
+
+  --dracula-background: #282A36;
+  --dracula-foreground: #F8F8F2;
+}
+
+body {
+  background-image: linear-gradient(to right top, #091a1a, #0a1c1c, #0b1d1d, #0c1f1f, #0c2121, #0c2323, #0d2524, #0d2726, #0d2928, #0e2b2a, #0e2d2c, #0e2f2e);
+}
+
+/*
+  Good     artists copy,
+  Great    artists steal,
+  Greatest artists copy then paste
+*/
+.effect ul li *:hover {
+  color: #FBFAFC;
+}
+
+.effect ul li *:hover::after, .effect ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.effect ul li *::after, .effect ul li a::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 0;
+  right: 0;
+  height: 3px;
+}
+
+.effect ul li *::before {
+  -webkit-transition: width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+  -o-transition: width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+  transition: width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+  background: #845EC2;
+}
+
+.effect ul li *::after {
+  -webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #2FFFAD;
+}
+
+.effect ul li *.active:after {
+  background: #2FFFAD;
+  width: 100%;
+  left: 0;
+}
+
+.effect ul li *.active:before {
+  z-index: 2;
 }
 
 a {
@@ -20,7 +74,6 @@ button {
 header {
   position: sticky;
   top: 0;
-  border-bottom: 2px double var(--text);
 }
 
 header,
@@ -71,10 +124,19 @@ nav ul li {
 }
 
 .editor {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  border: 0;
+  padding: 1vh;
   margin-top: 0;
   width: 45vw;
   height: 85vh;
-  border-radius: 0 .75rem;
+  border-radius: .5rem;
+  resize: none;
+}
+
+.editor:focus {
+  outline: 0;
 }
 
 #copyright {

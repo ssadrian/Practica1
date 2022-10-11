@@ -8,7 +8,6 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right top, #fff5ff, #e5dfe7, #cdcacf, #b6b5b8, #a0a0a0);
 }
 
 h1 {
@@ -181,4 +180,8 @@ h3 {
 .btn-outline-failure:hover {
   color: #fff;
   background-color: var(--failure-color);
+}
+
+.text-white {
+  color: #fff;
 }
